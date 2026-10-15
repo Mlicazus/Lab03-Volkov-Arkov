@@ -40,9 +40,15 @@
 // System.Console.WriteLine($"Исходная строка: {text3}");
 // System.Console.WriteLine($"Восстановленная: {restored}");
 
-int number2 = 123456789;
-byte[] bytes2 = BitConverter.GetBytes(number2);
-int restored2 = BitConverter.ToInt32(bytes2, 0);
-System.Console.WriteLine($"Исходное число: {number2}");
-System.Console.WriteLine($"Восстановленное: {restored2}");
-System.Console.WriteLine($"Байты: {BitConverter.ToString(bytes2)}");
+// int number2 = 123456789;
+// byte[] bytes2 = BitConverter.GetBytes(number2);
+// int restored2 = BitConverter.ToInt32(bytes2, 0);
+// System.Console.WriteLine($"Исходное число: {number2}");
+// System.Console.WriteLine($"Восстановленное: {restored2}");
+// System.Console.WriteLine($"Байты: {BitConverter.ToString(bytes2)}");
+
+using System.Text;
+
+byte[] data = { 0x41, 0x42, 0x43 };
+System.Console.WriteLine($"Байты: {BitConverter.ToString(data)}");
+System.Console.WriteLine($"Как текст UTF-8: {Encoding.UTF8.GetString(data)}");
