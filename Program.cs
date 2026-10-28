@@ -8,20 +8,20 @@
 // System.Console.WriteLine(BitConverter.ToString(numberbytes));
 // string text = "Hello";
 // System.Console.WriteLine();
-// System.Console.WriteLine($"ТЕкст: {text}");
+// System.Console.WriteLine($"Текст: {text}");
 // byte[] textbytes = Encoding.UTF8.GetBytes(text);
 // System.Console.WriteLine("Байты текста UTF-8:");
 // System.Console.WriteLine(BitConverter.ToString(textbytes));
 
-// using System.Text;
+using System.Text;
 
-// string text2 = "Privet";
-// byte[] textBytes2 = Encoding.UTF8.GetBytes(text2);
-// System.Console.WriteLine();
-// System.Console.WriteLine($"Текст:{text2}");
-// System.Console.WriteLine($"Количество символов:{text2.Length}");
-// System.Console.WriteLine($"Количество байтов UTF-8:{textBytes2.Length}");
-// System.Console.WriteLine($"Байты:{BitConverter.ToString(textBytes2)}");
+string text2 = "Привет";
+byte[] textBytes2 = Encoding.UTF8.GetBytes(text2);
+System.Console.WriteLine();
+System.Console.WriteLine($"Текст: {text2}");
+System.Console.WriteLine($"Количество символов: {text2.Length}");
+System.Console.WriteLine($"Количество байтов UTF-8: {textBytes2.Length}");
+System.Console.WriteLine($"Байты: {BitConverter.ToString(textBytes2)}");
 
 // using System.Text;
 
@@ -47,8 +47,8 @@
 // System.Console.WriteLine($"Восстановленное: {restored2}");
 // System.Console.WriteLine($"Байты: {BitConverter.ToString(bytes2)}");
 
-using System.Text;
+// using System.Text;
 
-byte[] data = { 0x41, 0x42, 0x43 };
-System.Console.WriteLine($"Байты: {BitConverter.ToString(data)}");
-System.Console.WriteLine($"Как текст UTF-8: {Encoding.UTF8.GetString(data)}");
+// byte[] data = { 0x41, 0x42, 0x43 };
+// System.Console.WriteLine($"Байты: {BitConverter.ToString(data)}");
+// System.Console.WriteLine($"Как текст UTF-8: {Encoding.UTF8.GetString(data)}");
